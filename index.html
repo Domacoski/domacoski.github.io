@@ -1,160 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Thiago Luiz Domacoski</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style type="text/css">
-body {
-	margin: 0 auto;
-	float: left;
-}
-canvas{
-margin: 0 auto;
-margin-left: 5px;
-margin-top: 5px;
-float: left;
-background-color: white;
-}
-</style>
+<link rel="stylesheet" href="css/w3.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/domacoski.js"></script>
 </head>
-<body>
-<canvas id="content-view" width="200" height="100" >
-Não suporta html5, mude de navegador.
-</canvas>
+<body class="w3-container">
+
+<header class="w3-container">
+    <div class="w3-bar w3-black">
+        <a href="#" class="w3-bar-item">
+            <p class="w3-dropdown-hover img-hover">
+                <img src="img/home.png" width="30" height="30" alt="home" class="img-bar">
+                <span class="w3-dropdown-content dropdown-img">Página inicial</span>
+            </p>
+        </a>
+
+        <a href="#" class="w3-bar-item">
+            <p class="w3-dropdown-hover img-hover">
+                <img src="img/article.png" width="30" height="30" alt="artigos" class="img-bar">
+                <span class="w3-dropdown-content dropdown-img">Artigos</span>
+            </p>
+        </a>
+
+        <a href="#" class="w3-bar-item">
+            <p class="w3-dropdown-hover img-hover">
+                <img src="img/info.png" width="30" height="30" alt="sobre" class="img-bar">
+                <span class="w3-dropdown-content dropdown-img">sobre</span>
+            </p>
+        </a>
 
 
 
-<script type="text/javascript">
-var w = window.innerWidth-15;
-var h = window.innerHeight-25;
-console.log('set Width: '+w+' ,Height: '+h);
-var c = document.getElementById("content-view");
-c.width=w;
-c.height=h;
-var meioW =  w/2;
-var meioH =  h/2;
+
+
+        <a href="#" class="w3-bar-item w3-right">
+            <img src="img/linkedin.png" width="30" height="30" alt="LinkedIn" class="img-bar">
+        </a>
+        <a href="#" class="w3-bar-item w3-right">
+            <img src="img/twitter.png" width="30" height="30" alt="Twitter" class="img-bar">
+        </a>
+        <a href="#" class="w3-bar-item w3-right">
+            <img src="img/stack-overflow.png" width="30" height="30" alt="StackOverflow" class="img-bar">
+        </a>
+    </div>
+</header>
+
+<article class="w3-container w3-auto">
 
 
 
-var _raio = h/12;
-var verde = c.getContext('2d');
-var azul = c.getContext('2d');
-var vermelho = c.getContext('2d');
+</article>
 
 
 
 
-verde.beginPath();
-verde.arc(meioW, meioH, _raio, 0, 2 * Math.PI, false);
-verde.fillStyle = 'rgba(0,255,0,0.3)';
-verde.fill();
-verde.lineWidth = 1;
-verde.strokeStyle = 'green';
-verde.stroke();
-
-
-verde.beginPath();
-verde.arc((meioW+_raio), meioH, _raio, 0, 2 * Math.PI, false);
-verde.fillStyle = 'rgba(0,255,0,0.3)';
-verde.fill();
-verde.lineWidth = 1;
-verde.strokeStyle = 'green';
-verde.stroke();
-
-
-verde.beginPath();
-verde.arc((meioW-_raio), meioH, _raio, 0, 2 * Math.PI, false);
-verde.fillStyle = 'rgba(0,255,0,0.3)';
-verde.fill();
-verde.lineWidth = 1;
-verde.strokeStyle = 'green';
-verde.stroke();
-
-
-verde.beginPath();
-verde.arc(meioW, (meioH-_raio), _raio, 0, 2 * Math.PI, false);
-verde.fillStyle = 'rgba(0,255,0,0.3)';
-verde.fill();
-verde.lineWidth = 1;
-verde.strokeStyle = 'green';
-verde.stroke();
-
-
-verde.beginPath();
-verde.arc(meioW, (meioH+_raio), _raio, 0, 2 * Math.PI, false);
-verde.fillStyle = 'rgba(0,255,0,0.3)';
-verde.fill();
-verde.lineWidth = 1;
-verde.strokeStyle = 'green';
-verde.stroke();
 
 
 
-azul.beginPath();
-azul.arc((meioW+(_raio*2)), (meioH), _raio, 0, 2 * Math.PI, false);
-azul.fillStyle = 'rgba(0,0,255,0.3)';
-azul.fill();
-azul.lineWidth = 1;
-azul.strokeStyle = 'blue';
-azul.stroke();
 
 
-azul.beginPath();
-azul.arc((meioW-(_raio*2)), (meioH), _raio, 0, 2 * Math.PI, false);
-azul.fillStyle = 'rgba(0,0,255,0.3)';
-azul.fill();
-azul.lineWidth = 1;
-azul.strokeStyle = 'blue';
-azul.stroke();
-
-azul.beginPath();
-azul.arc((meioW), (meioH-(_raio*2)), _raio, 0, 2 * Math.PI, false);
-azul.fillStyle = 'rgba(0,0,255,0.3)';
-azul.fill();
-azul.lineWidth = 1;
-azul.strokeStyle = 'blue';
-azul.stroke();
-
-azul.beginPath();
-azul.arc((meioW), (meioH+(_raio*2)), _raio, 0, 2 * Math.PI, false);
-azul.fillStyle = 'rgba(0,0,255,0.3)';
-azul.fill();
-azul.lineWidth = 1;
-azul.strokeStyle = 'blue';
-azul.stroke();
-
-
-vermelho.beginPath();
-vermelho.arc((meioW+_raio), (meioH+(_raio)), _raio, 0, 2 * Math.PI, false);
-vermelho.fillStyle = 'rgba(255,0,0,0.3)';
-vermelho.fill();
-vermelho.lineWidth = 1;
-vermelho.strokeStyle = 'red';
-vermelho.stroke();
-
-vermelho.beginPath();
-vermelho.arc((meioW-_raio), (meioH+(_raio)), _raio, 0, 2 * Math.PI, false);
-vermelho.fillStyle = 'rgba(255,0,0,0.3)';
-vermelho.fill();
-vermelho.lineWidth = 1;
-vermelho.strokeStyle = 'red';
-vermelho.stroke();
-
-vermelho.beginPath();
-vermelho.arc((meioW-_raio), (meioH-(_raio)), _raio, 0, 2 * Math.PI, false);
-vermelho.fillStyle = 'rgba(255,0,0,0.3)';
-vermelho.fill();
-vermelho.lineWidth = 1;
-vermelho.strokeStyle = 'red';
-vermelho.stroke();
-
-vermelho.beginPath();
-vermelho.arc((meioW+_raio), (meioH-_raio), _raio, 0, 2 * Math.PI, false);
-vermelho.fillStyle = 'rgba(255,0,0,0.3)';
-vermelho.fill();
-vermelho.lineWidth = 1;
-vermelho.strokeStyle = 'red';
-vermelho.stroke();
-</script>
 </body>
 </html>
