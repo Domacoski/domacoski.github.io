@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <script>
+    function redirect(){
+        var playStoreUrl = "https://play.google.com/store/apps/details?id=com.arca.embarca",
+        appStoreUrl      = "https://apps.apple.com/br/app/embarca-ai/id1508467440",
+        platform         = "https://embarca.com.br/";
+
+        if (/mac/i.test(platform))
+            window.location.href = appStoreUrl;
+        else if (/linux/i.test(platform))
+            window.location.href = playStoreUrl;
+        else
+            window.location.href =  platform;
+    }
+    </script>
+</head>
+
+</html>
