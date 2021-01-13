@@ -3,16 +3,15 @@
  <head>
     <script>
         var playStoreUrl = "https://play.google.com/store/apps/details?id=com.arca.embarca",
-        appStoreUrl      = "https://apps.apple.com/br/app/embarca-ai/id1508467440",
-        page             =  "https://embarca.com.br/"
-        platform         =  navigator.platform;      
-
+            appStoreUrl  = "https://apps.apple.com/br/app/embarca-ai/id1508467440",
+            platform     =  navigator.platform; 
+     alert(plataform);
         if (/mac/i.test( platform )){
             window.location.href = appStoreUrl;
         }else if (/linux/i.test( platform )){
             window.location.href = playStoreUrl;
         }else{
-            window.location.href =  platform;
+            window.location.href =  "https://embarca.com.br/";
         }
     </script>
  </head>
